@@ -67,8 +67,8 @@ public class StudentController {
 		return "redirect:/students/list";
 	}
 
-	@RequestMapping("/403")
+	@RequestMapping("/401")
 	public String AccessDenied() {
-		return "403";
+		return "401";
 	}
 }

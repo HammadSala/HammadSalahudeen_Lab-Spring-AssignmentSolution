@@ -28,7 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.hasAuthority("ADMIN").anyRequest().authenticated().and().formLogin().loginProcessingUrl("/login")
 				.successForwardUrl("/students/list").defaultSuccessUrl("/students/list", true).permitAll().and()
 				.logout().logoutSuccessUrl("/login").permitAll().and().exceptionHandling()
-				.accessDeniedPage("/students/403").and().cors().and().csrf().disable();
+				.accessDeniedPage("/students/401").and().cors().and().csrf().disable();
 
 	}
 
